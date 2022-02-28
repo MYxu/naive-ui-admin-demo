@@ -570,7 +570,7 @@
   resolved "https://registry.yarnpkg.com/@css-render/plugin-bem/-/plugin-bem-0.15.8.tgz#02df62ec0a16f5c07687e64f1ee595e8509d04ce"
   integrity sha512-rJMFBaqZGrezs1d0vPB7hZTSkfFEgcdWxPMtLUmm9PAOioWtw+Knb9A0xU0bYazPKDo0SoNVVcd1Qd1LXD9x4Q==
 
-"@css-render/vue3-ssr@^0.15.8":
+"@css-render/vue3-ssr@^0.15.7", "@css-render/vue3-ssr@^0.15.8":
   version "0.15.8"
   resolved "https://registry.yarnpkg.com/@css-render/vue3-ssr/-/vue3-ssr-0.15.8.tgz#76f36fd52c4e53b8f553e00032c378c0ae59bab3"
   integrity sha512-zPFyOH47hEcyRgoIjNEwzYqZEq/LEXPafDXY/9EMpvgCmsPhW1bpC3w8YwAISaP519QesJ/8aNDL/xWKpwXBvQ==
@@ -4978,10 +4978,10 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
-naive-ui@^2.23.2:
-  version "2.23.2"
-  resolved "https://registry.yarnpkg.com/naive-ui/-/naive-ui-2.23.2.tgz#4fa03b3ffec0768c0fe5d8eb7b51dadf36319119"
-  integrity sha512-x5XtoJrfMcBGqkryJ6RPg3hB7xDqbO+5TfDB1UGIaVsj2fsidn9S9a6yK/jXqKbw+h5h97NqOu+Lf5EH8tAIog==
+naive-ui@^2.25.5:
+  version "2.25.5"
+  resolved "https://registry.npmmirror.com/naive-ui/-/naive-ui-2.25.5.tgz#964699e50d975a5031b56fe0dd93e99ef6b3bf77"
+  integrity sha512-COT+8+xgYIliHWLl3vwtqmnoXGp3tbobUiRHC0KBOBOvqnLHw5gZKYDQhShbbblL6/gXqQR2L7LDorgSucE6Jg==
   dependencies:
     "@css-render/plugin-bem" "^0.15.8"
     "@css-render/vue3-ssr" "^0.15.8"
@@ -4998,9 +4998,9 @@ naive-ui@^2.23.2:
     seemly "^0.3.3"
     treemate "^0.3.9"
     vdirs "^0.1.7"
-    vfonts "^0.1.0"
+    vfonts "^0.0.3"
     vooks "^0.2.12"
-    vueuc "^0.4.19"
+    vueuc "^0.4.26"
 
 nanoid@^3.1.30:
   version "3.1.30"
@@ -6790,6 +6790,11 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
+vfonts@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmmirror.com/vfonts/-/vfonts-0.0.3.tgz#999d66fecea18efee3f2b966c81101ae8ce01a29"
+  integrity sha512-nguyw8L6Un8eelg1vQ31vIU2ESxqid7EYmy8V+MDeMaHBqaRSkg3dTBToC1PR00D89UzS/SLkfYPnx0Wf23IQQ==
+
 vfonts@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/vfonts/-/vfonts-0.1.0.tgz#c16af37ca044b2725ae55553049280efbe6222a9"
@@ -6926,11 +6931,12 @@ vuedraggable@^4.0.3:
   dependencies:
     sortablejs "1.14.0"
 
-vueuc@^0.4.19:
-  version "0.4.19"
-  resolved "https://registry.yarnpkg.com/vueuc/-/vueuc-0.4.19.tgz#4f7f5f91201994e400d670944c7d880013bbf601"
-  integrity sha512-mzhYwv60cldElLolvG5sMsDFNMP1+vQbxPnbWzT2BdIG6XfF0hzCxq0KMoYpg4cAekKijty2txRgNkySIjTWLA==
+vueuc@^0.4.26:
+  version "0.4.26"
+  resolved "https://registry.npmmirror.com/vueuc/-/vueuc-0.4.26.tgz#7196c260d871120576048668c1d81efe716b0458"
+  integrity sha512-IK6TV4468k7Hpj1SXXPYelT/aYqmfa/SYTLFospwJ/uMebRExS1fh5tx6ZT3fSA0OkmCOHmmi2OGke+eSseAgw==
   dependencies:
+    "@css-render/vue3-ssr" "^0.15.7"
     css-render "^0.15.7"
     evtd "^0.2.2"
     resize-observer-polyfill "^1.5.1"

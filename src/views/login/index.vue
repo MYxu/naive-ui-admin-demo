@@ -39,7 +39,7 @@
               </template>
             </n-input>
           </n-form-item>
-          <n-form-item path="isCaptcha">
+          <n-form-item v-if="false" path="isCaptcha">
             <div class="w-full">
               <mi-captcha width="384" theme-color="#2d8cf0" :logo="logo" @success="onAuthCode" />
             </div>
@@ -118,7 +118,7 @@
     username: { required: true, message: '请输入用户名', trigger: 'blur' },
     password: { required: true, message: '请输入密码', trigger: 'blur' },
     isCaptcha: {
-      required: true,
+      required: false,
       type: 'boolean',
       trigger: 'change',
       message: '请点击按钮进行验证码校验',

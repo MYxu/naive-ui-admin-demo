@@ -24,6 +24,7 @@ const menusList = [
         name: 'dashboard_monitor',
         component: '/dashboard/monitor/monitor',
         meta: {
+          hidden: true,
           keepAlive: true,
           title: 'DataTable测试',
         },
@@ -35,6 +36,24 @@ const menusList = [
         meta: {
           hidden: true,
           title: '工作台',
+        },
+      },
+      {
+        path: 'dataTable1',
+        name: 'dashboardDataTable1',
+        component: '/dashboard/dataTable/useVirtualScroll',
+        meta: {
+          keepAlive: true,
+          title: '虚拟滚动table',
+        },
+      },
+      {
+        path: 'dataTable2',
+        name: 'dashboardDataTable2',
+        component: '/dashboard/dataTable/notUseVirtualScroll',
+        meta: {
+          keepAlive: true,
+          title: '非虚拟滚动table',
         },
       },
     ],

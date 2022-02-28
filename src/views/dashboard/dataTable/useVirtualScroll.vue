@@ -1,12 +1,11 @@
 <template>
-  <div>
-    <n-input v-model="inputVal" />
+  <div style="width: 1000px;">
+    <n-input v-model="inputVal" style="margin-bottom: 10px;" />
     <n-data-table
       ref="table"
       :columns="columns"
       :data="data"
       :max-height="500"
-      :scroll-x="1800"
       :virtual-scroll="true"
     />
   </div>
@@ -40,22 +39,6 @@
       },
     },
     {
-      title: 'Row1',
-      key: 'row1',
-      render(row, index) {
-        return h('span', ['row ', index]);
-      },
-    },
-    {
-      title: 'Row2',
-      key: 'row2',
-      render(row, index) {
-        return h('span', ['row ', index]);
-      },
-      width: 100,
-      fixed: 'right',
-    },
-    {
       title: 'Address',
       key: 'address',
       width: 200,
@@ -64,13 +47,13 @@
   ];
 
   export default defineComponent({
-    name: 'dashboard_monitor',
+    name: 'dashboardDataTable1',
     setup() {
       return {
         inputVal: ref(0),
         data: Array.apply(null, { length: 200 }).map((_, index) => ({
           key: index,
-          name: `Edward King ${index}`,
+          name: `${index}`,
           age: 32,
           address: `London, Park Lane no. ${index}`,
         })),
